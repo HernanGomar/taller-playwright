@@ -5,12 +5,14 @@ export class LoginPage{
     readonly emailInput: Locator;
     readonly passwordInput: Locator;
     readonly loginButton: Locator;
+    readonly signUp: Locator
 
     constructor(page: Page) {
         this.page = page;
         this.emailInput = page.locator('input[name="email"]');
         this.passwordInput = page.locator('input[name="password"]');
         this.loginButton = page.getByTestId('boton-login');
+        this.signUp = page.getByTestId('link-registrarse-login')
     }
 
     async visitarPaginaLogin() {
@@ -30,5 +32,9 @@ export class LoginPage{
     async completarYHacerClickBotonLogin(usuario: {email: string, contraseña: string}) {
         await this.completarFormularioLogin(usuario);
         await this.hacerClickBotonLogin();
+    }
+
+    async RedirigiraSignUp(){
+        await this.signUp.click();
     }
 }

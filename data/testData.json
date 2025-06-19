@@ -1,8 +1,26 @@
 {
     "usuarioValido": {
-        "nombre": "Juan",
-        "apellido": "Torres",
-        "email": "email@valido.com",
+        "nombre": "Hernan",
+        "apellido": "Gomar",
+        "email": "gomar.hernan@gmail.com",
         "contraseña": "123456"
+    },
+    "usuarioInvalido": {
+        "nombre": "Alejandro",
+        "apellido": "Gomar",
+        "email": "Alejandro.hernan@gmail.com",
+        "contraseña": "4574563"
+    },
+        "usuarioSinPass": {
+        "nombre": "Alejandro",
+        "apellido": "Gomar",
+        "email": "Alejandro.hernan@gmail.com",
+        "contraseña": ""
+    },
+        "usuarioEmailSinFormato": {
+        "nombre": "Alejandro",
+        "apellido": "Gomar",
+        "email": "Alejandro.hernan@",
+        "contraseña": "4784"
     }
 }
